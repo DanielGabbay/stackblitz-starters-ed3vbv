@@ -7,8 +7,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     imports: [
         CommonModule,
     ],
-    template: `<p>json-editor works!</p>`,
-    styleUrl: './json-editor.component.css',
+    templateUrl: './json-editor.component.html',
+    styleUrl: './json-editor.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class JsonEditorComponent { }

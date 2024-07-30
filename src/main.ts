@@ -1,20 +1,17 @@
-import { Component } from '@angular/core';
-import { bootstrapApplication } from '@angular/platform-browser';
-import 'zone.js';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { Component } from "@angular/core";
+import { bootstrapApplication } from "@angular/platform-browser";
+import "zone.js";
+import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
+import { JsonEditorComponent } from "./components/json-editor/json-editor.component";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  template: `
-    <h5>Hello from {{ name }}!</h5>
-    <a target="_blank" href="https://angular.dev/overview">
-      Learn more about Angular
-    </a>
-  `,
+  template: `<app-json-editor></app-json-editor>`,
+  imports: [JsonEditorComponent],
 })
 export class App {
-  name = 'Angular';
+  name = "Angular";
 }
 
 bootstrapApplication(App, {
