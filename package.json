@@ -16,6 +16,8 @@
     "@angular/material": "^18.1.2",
     "@angular/platform-browser": "^18.1.2",
     "@angular/router": "^18.1.2",
+    "class-transformer": "^0.5.1",
+    "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "tslib": "^2.5.0",
     "zone.js": "~0.14.0"
